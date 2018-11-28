@@ -27,6 +27,17 @@
     <h2>
         Aplikasi Film Kita Semua
     </h2>
+    <form action="api/search.php" method="get">
+      <input type="text" name="search" placeholder="Type Title Here" required>
+      <select name="channel" required>
+        <option value="movie" selected="selected">Movie
+        </option>
+        <option value="tv">TV Show
+        </option>
+      </select>
+      <button type="submit">CARI
+      </button>
+    </form>
 
     <div class="sliding-menu flex-center-wrapper flex-column left-menu">
         <ul>
@@ -56,6 +67,12 @@
             </li>
             <li>
                 <a href="api/nowplaying.html">NOW PLAYING</a>
+            </li>
+            <li style="list-style: none; display: inline">
+                <hr>
+            </li>
+            <li>
+                <a href="api/comingsoon.html">COMING SOON</a>
             </li>
         </ul>
         <span class="sliiider-exit exit left-exit">&#215</span>
